@@ -1,8 +1,7 @@
 package addon;
 
 public class day2task3 {
-	
-	    public static boolean isPalindrome(String str) {
+	public static boolean isPalindrome(String str) {
 	    	str = str.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
 	    	int left = 0;
 	        int right = str.length() - 1;
