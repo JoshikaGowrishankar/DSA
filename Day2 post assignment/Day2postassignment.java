@@ -1,7 +1,7 @@
 package addon;
 
 public class Day2postassignment {
-	public static int[] findPairWithTargetSum(int[] arr, int target) {
+	public static int[] TargetSum(int[] arr, int target) {
 	        int left = 0;
 	        int right = arr.length - 1;
 		while (left < right) {
@@ -21,7 +21,7 @@ public class Day2postassignment {
 	public static void main(String[] args) {
 	        int[] arr = {1, 2, 3, 4, 6};
 	        int target = 6;
-	        int[] result = findPairWithTargetSum(arr, target);
+	        int[] result = TargetSum(arr, target);
 		if (result.length == 2) {
 	            System.out.println("Pair found: " + result[0] + " and " + result[1]);
 	        } else
