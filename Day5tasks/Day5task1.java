@@ -9,29 +9,19 @@ public class Day5task1 {
 	 Node(int num){
 	 data=num;
 	 next=null;
-	
-}
-	  
-		
 	}
-
-	
-	
-	public void insert(int num) {
+}
+public void insert(int num) {
 		Node newNode=new Node(num);
 		if(last==null) {
 			last=newNode;
 			newNode.next=last;
-			
 		}
 		else {
 			last.next=newNode;
 			newNode.next=last;
 		}
-		
-	}
-
-	public void display()
+}public void display()
 	{
 		Node temp=last.next;
 		while(temp!=last) {
@@ -39,8 +29,7 @@ public class Day5task1 {
 			temp=temp.next;
 		}
 		System.out.print(temp.data);
-		
-	}
+		}
 	public static void main(String args[]) {
 		Day5task1 list=new Day5task1();
 		list.insert(5);
