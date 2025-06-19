@@ -1,0 +1,8 @@
+create database connect;
+use connect;
+create table student(id int,name varchar(20),marks int,department varchar(10),section varchar(1));
+insert into student values(1,"Joo",67,CS,B),(2,"Joshika",23,CS,A),(3,"Bavatharani",55,CS,C);
+alter table student add gender varchar(10);
+alter table student drop section;
+truncate table student;
+drop database connect;
